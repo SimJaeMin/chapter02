@@ -2,8 +2,6 @@ package chapter02;
 
 public class ArrayUtilTest {
 	public static void main(String[] args) {
-		String s="qwe";
-		String ss="werwe";
 		int a[] = { 10, 20, 30, 40, 50 };
 		int b[] = {50,60,70,80,90};
 		double[] d = ArrayUtil.intToDouble(a);
@@ -19,6 +17,5 @@ public class ArrayUtilTest {
 		for(int i:a3){
 			System.out.println(i);
 		}
-		System.out.println(s.concat(ss));
 	}
 }

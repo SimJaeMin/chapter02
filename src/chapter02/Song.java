@@ -6,7 +6,20 @@ public class Song {
 	private String alburm;
 	private String composer;
 	private int year;
-	private int track;
+	private int track; 
+	public Song(){
+	};
+	public Song(String artist,String title){
+		this(title,artist," "," ",0,2017);
+	}
+	public Song(String title, String artist, String composer, String alburm, int track, int year){
+		this.title=title;
+		this.artist=artist;
+		this.alburm=alburm;
+		this.composer=composer;
+		this.track=track;
+		this.year=year;
+	}
 	public String getTitle() {
 		return title;
 	}
@@ -47,6 +60,14 @@ public class Song {
 		System.out.println("노래의 제목은 "+title+ ","+"가수는"+ artist+
 				           "앨범은 "+alburm+"작고가는 "+composer+"발표된 연도는"
 				           +year+"트랙번호는"+track);
+	}
+	@Override
+	public String toString() {
+		return "Song [title=" + title + ", artist=" + artist + ", alburm=" + alburm + ", composer=" + composer
+				+ ", year=" + year + ", track=" + track + ", getTitle()=" + getTitle() + ", getArtist()=" + getArtist()
+				+ ", getAlburm()=" + getAlburm() + ", getComposer()=" + getComposer() + ", getYear()=" + getYear()
+				+ ", getTrack()=" + getTrack() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
+				+ ", toString()=" + super.toString() + "]";
 	}
 	
 
