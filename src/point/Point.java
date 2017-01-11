@@ -1,6 +1,5 @@
 package point;
-
-public class Point {
+public class Point implements Drawable{
 	private int x;
 	private int y;
 	Point(int x, int y){
@@ -30,5 +29,9 @@ public class Point {
 		else{
 			System.out.println("점이 없어졌습니다.");
 		}
+	}
+	@Override
+	public void draw() {
+		show();
 	}
 	}
